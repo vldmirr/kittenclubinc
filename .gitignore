@@ -1,4 +1,4 @@
-.idea
 __pychache__
 my_env
 *.sqlite3
+.idea
