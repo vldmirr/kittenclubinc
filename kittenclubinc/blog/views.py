@@ -14,9 +14,7 @@ def post_list(request):
         #if page=char_value
         posts=paginator.page(1)
 
-    except EmptyPage:
-        # give last page
-        posts = paginator.page(paginator.num_pages)
+
 
     return render(request,
                   'blog/post/list.html',
