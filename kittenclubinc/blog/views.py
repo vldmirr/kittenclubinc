@@ -13,9 +13,7 @@ def post_list(request):
     except PageNotAnInteger:
         #if page=char_value
         posts=paginator.page(1)
-    except EmptyPage:
-        # give last page
-        posts = paginator.page(paginator.num_pages)
+
 
 
     return render(request,
